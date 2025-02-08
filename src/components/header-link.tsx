@@ -6,32 +6,31 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-interface HeaderLinksProps {
+interface HeaderLinkProps {
   title: string;
   dropdown?: string[];
 }
 
-const HeaderLinks: FC<HeaderLinksProps> = ({ title, dropdown }) => {
+const HeaderLink: FC<HeaderLinkProps> = ({ title, dropdown }) => {
   return (
     <Popover>
       <PopoverTrigger>
-        <div className="flex items-center gap-1 px-[10px] py-3 cursor-pointer rounded-md transition-all duration-300 hover:text-blue-500">
-          <h2 className="font-medium text-md ">{title}</h2>
+        <div className="lg:flex justify-center items-center hidden text-[14px] hover:text-blue-600 font-bold transition-all duration-200">
+          <h1 className="mr-0.5">{title}</h1>
           <Image
-            src="/down.svg"
+            src={"/down.svg"}
             alt={`${title} dropdown`}
             width={12}
             height={12}
           />
         </div>
       </PopoverTrigger>
-
       {dropdown?.length !== 0 && (
-        <PopoverContent className="w-50 bg-white shadow-lg rounded-md border mt-2">
+        <PopoverContent className="w-50 shadow-lg bg-white ">
           {dropdown?.map((item, index) => (
             <div
+              className="px-4 py-2 hover:bg-[#e8f8fd] hover:text-blue-600 rounded-md transition-all duration-300 font-medium"
               key={index}
-              className="px-4 py-2 hover:bg-[#e8f8fd] hover:text-blue-500 cursor-pointer rounded-sm font-medium text-sm transition-all duration-300"
             >
               {item}
             </div>
@@ -42,4 +41,4 @@ const HeaderLinks: FC<HeaderLinksProps> = ({ title, dropdown }) => {
   );
 };
 
-export default HeaderLinks;
+export default HeaderLink;
