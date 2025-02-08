@@ -6,8 +6,8 @@ import HeaderLink from "./header-link";
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-lg fixed top-0 w-full">
-      <Container className="flex justify-between">
+    <header className="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
+      <Container className="flex justify-between items-center">
         <Image
           src={"/logo_new.svg"}
           alt={"logo paytm"}

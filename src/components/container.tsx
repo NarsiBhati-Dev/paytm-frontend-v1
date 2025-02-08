@@ -8,7 +8,7 @@ interface ContainerProps {
 
 const Container: FC<ContainerProps> = ({ children, className }) => {
   return (
-    <section className={clsx("max-w-[1206px] mx-auto p-6", className)}>
+    <section className={clsx("max-w-[1206px] mx-auto p-4", className)}>
       {children}
     </section>
   );
