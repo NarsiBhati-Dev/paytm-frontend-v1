@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import { RecoilRoot } from "recoil";
 import TripSelector from "./trip-selector";
+import TripContextProvider from "@/context-api/trip-context-provider";
 
 const TripBooking = () => {
   return (
-    <RecoilRoot>
-      <TripSelector />
-    </RecoilRoot>
+    <TripContextProvider>
+      <TripSelector />;
+    </TripContextProvider>
   );
 };
 
