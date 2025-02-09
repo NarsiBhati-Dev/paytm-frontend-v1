@@ -32,10 +32,11 @@ const TripBooking = () => {
         <div className="text-right w-full ">
           <div className="text-green-600 text-[12px] flex justify-end gap-1">
             <Image
-              src={"/a6fdca89..png"}
+              src={"/a6fdca89.png"}
               alt={"saving"}
               width={14}
               height={14}
+              className="w-auto h-auto"
             />{" "}
             <p className="font-semibold">Extra Savings</p>
           </div>
@@ -75,7 +76,7 @@ const TripBooking = () => {
           </div>
         </div>
       </div>
-      <button className="bg-[#00baf2] p-5 rounded-sm mt-4 text-white font-extrabold ease-in-out hover:bg-blue-400">
+      <button className="bg-[#00baf2] p-5 rounded-sm mt-4 text-white font-extrabold transition-all duration-300 ease-in-out hover:bg-blue-500 hover:scale-[101%] shadow-md hover:shadow-lg">
         Search Flights
       </button>
     </TripContextProvider>

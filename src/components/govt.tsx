@@ -6,7 +6,13 @@ const Govt = () => {
   return (
     <section className="w-full mt-24 mb-6">
       <Container className="flex justify-center items-center">
-        <Image src={"/govt.avif"} alt={"govt. image"} width={728} height={90} />
+        <Image
+          src={"/govt.avif"}
+          alt={"govt. image"}
+          width={728}
+          height={90}
+          className="w-auto h-auto"
+        />
       </Container>
     </section>
   );
