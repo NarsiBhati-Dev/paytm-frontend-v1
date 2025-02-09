@@ -22,7 +22,7 @@ const RadioButton: FC<RadioButtonProps> = ({ title }) => {
       className={clsx(
         "w-full text-center p-1 cursor-pointer ease-in-out transition-all duration-300",
         trip == title
-          ? "bg-white rounded-sm font-medium text-blue-600"
+          ? "bg-white rounded-sm font-medium text-[#00baf2]"
           : "text-gray-600"
       )}
       onClick={() => setTrip(title)}

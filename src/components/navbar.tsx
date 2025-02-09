@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "./container";
-import Image from "next/image";
 import { NavLinksData } from "@/data/nav-links-data";
 import NavButton from "./nav-button";
 

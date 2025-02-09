@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import RadioButton from "./radio-button";
 
 const TripSelector = () => {
