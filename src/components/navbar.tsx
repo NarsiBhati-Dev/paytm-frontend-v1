@@ -7,7 +7,7 @@ import NavButton from "./nav-button";
 const Navbar = () => {
   return (
     <Container className="flex justify-center items-center ">
-      <nav className="flex justify-start gap-4 items-center">
+      <nav className="flex justify-center gap-4 items-center ">
         {NavLinksData.map(({ title, img }, index) => (
           <NavButton title={title} img={img} key={index} />
         ))}

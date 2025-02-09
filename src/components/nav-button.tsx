@@ -8,9 +8,15 @@ interface NavButtonProps {
 
 const NavButton: FC<NavButtonProps> = ({ title, img }) => {
   return (
-    <div className="flex justify-center items-center hover:border-b-2 hover:border-blue-600 cursor-pointer p-2">
-      <Image src={img} alt={title} width={30} height={30} />
-      <h2 className="ml-2">{title}</h2>
+    <div className="flex md:flex-row flex-col justify-center items-center hover:border-b-2 hover:border-blue-600 cursor-pointer md:p-2 p-1">
+      <Image
+        src={img}
+        alt={title}
+        width={25}
+        height={25}
+        className="w-6 h-6 md:w-8 md:h-8"
+      />
+      <h2 className="ml-2 text-sm md:text-md lg:text-lg">{title}</h2>
     </div>
   );
 };

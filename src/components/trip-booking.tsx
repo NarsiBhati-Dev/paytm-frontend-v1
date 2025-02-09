@@ -6,7 +6,7 @@ import TripContextProvider from "@/context-api/trip-context-provider";
 const TripBooking = () => {
   return (
     <TripContextProvider>
-      <TripSelector />;
+      <TripSelector />
     </TripContextProvider>
   );
 };
