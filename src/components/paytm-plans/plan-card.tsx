@@ -9,7 +9,7 @@ interface PlanCardProps {
 
 const PlanCard: FC<PlanCardProps> = ({ heading1, heading2, img }) => {
   return (
-    <div className="md:px-6 flex flex-col justify-center items-center md:p-4 md:hover:shadow-2xl md:hover:rounded-md cursor-pointer">
+    <div className="md:px-6 flex flex-col justify-center items-center md:p-4 md:hover:shadow-2xl md:hover:rounded-md cursor-pointer w-full">
       <Image
         src={img}
         alt={""}

@@ -33,7 +33,7 @@ const PaytmPlanCard: FC<PaytmPlanCardProps> = ({ title, items, buttonImg }) => {
         alt={""}
         width={556}
         height={65}
-        className="w-auto h-auto cursor-pointer"
+        className="lg:w-auto h-auto w-full cursor-pointer "
       />
     </div>
   );

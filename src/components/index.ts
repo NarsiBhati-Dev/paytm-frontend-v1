@@ -5,6 +5,7 @@ import TripBooking from "@/components/booking/trip-booking";
 import Footer from "@/components/footer";
 import DeveloperLink from "./developer-link";
 import PaytmPlanCard from "./paytm-plans/paytm-plan-card";
+import PaytmMoneyCard from "./cards/paytm-money-card";
 
 export {
   Container,
@@ -14,4 +15,5 @@ export {
   Footer,
   DeveloperLink,
   PaytmPlanCard,
+  PaytmMoneyCard,
 };
