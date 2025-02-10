@@ -22,7 +22,7 @@ const Header = () => {
           ))}
         </div>
 
-        <div className="lg:flex justify-center items-center hidden">
+        <div className="lg:flex justify-center items-center hidden cursor-pointer">
           <Image
             src={"/download.svg"}
             alt={` dropdown`}

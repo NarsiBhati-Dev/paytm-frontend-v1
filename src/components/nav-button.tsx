@@ -8,7 +8,7 @@ interface NavButtonProps {
 
 const NavButton: FC<NavButtonProps> = ({ title, img }) => {
   return (
-    <div className="flex md:flex-row flex-col justify-center items-center hover:border-b-2 hover:border-blue-600 cursor-pointer md:p-2 p-1">
+    <div className="flex md:flex-row flex-col justify-center items-center border-b-2 border-transparent hover:border-[#00baf2] cursor-pointer md:p-2 p-1">
       <Image
         src={img}
         alt={title}

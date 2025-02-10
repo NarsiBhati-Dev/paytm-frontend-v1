@@ -29,7 +29,7 @@ const HeaderLink: FC<HeaderLinkProps> = ({ title, dropdown }) => {
         <PopoverContent className="w-50 shadow-lg bg-white ">
           {dropdown?.map((item, index) => (
             <div
-              className="px-4 py-2 hover:bg-[#e8f8fd] hover:text-blue-600 rounded-md transition-all duration-300 font-medium"
+              className="px-4 py-2 hover:bg-[#e8f8fd] hover:text-blue-600 rounded-md transition-all duration-300 font-medium cursor-pointer"
               key={index}
             >
               {item}
