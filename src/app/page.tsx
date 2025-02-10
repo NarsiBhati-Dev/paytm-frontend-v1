@@ -1,5 +1,13 @@
-import { Container, Header, Navbar, TripBooking, Footer } from "@/components";
+import {
+  Container,
+  Header,
+  Navbar,
+  TripBooking,
+  Footer,
+  PaytmPlanCard,
+} from "@/components";
 import InfiniteSwiper from "@/components/swiper";
+import { PlanCardData, BillPaymentsData } from "@/data/paytm-plan-card-data";
 
 export default function Home() {
   return (
@@ -14,7 +22,18 @@ export default function Home() {
           <InfiniteSwiper />
         </Container>
       </section>
-      <Container className="md:p-0">3</Container>
+      <Container className="md:p-0 flex  justify-between md:flex-row flex-col  mt-6 gap-4">
+        <PaytmPlanCard
+          title={PlanCardData.title}
+          items={PlanCardData.images}
+          buttonImg={PlanCardData.buttonImg}
+        />
+        <PaytmPlanCard
+          title={BillPaymentsData.title}
+          items={BillPaymentsData.images}
+          buttonImg={BillPaymentsData.buttonImg}
+        />
+      </Container>
       <Footer />
     </section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "./container";
+import Container from "../container";
 import { NavLinksData } from "@/data/nav-links-data";
 import NavButton from "./nav-button";
 
