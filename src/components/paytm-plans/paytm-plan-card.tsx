@@ -30,7 +30,7 @@ const PaytmPlanCard: FC<PaytmPlanCardProps> = ({ title, items, buttonImg }) => {
       </div>
       <Image
         src={buttonImg}
-        alt={""}
+        alt={title}
         width={556}
         height={65}
         className="lg:w-auto h-auto w-full cursor-pointer "

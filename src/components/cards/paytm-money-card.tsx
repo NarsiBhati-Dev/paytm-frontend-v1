@@ -4,7 +4,7 @@ import { Container } from "@/components";
 
 const PaytmMoneyCard = () => {
   return (
-    <Container className="md:p-0 mt-8 md:m-2">
+    <Container className="md:p-0 mt-8 md:m-auto md:mt-4 ">
       <div
         className="bg-white md:p-14 p-8 w-full bg-cover bg-center flex md:flex-row flex-col justify-between rounded-md md:gap-0 gap-8 shadow "
         style={{
