@@ -20,7 +20,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-[#e8f8fd] pt-24 pb-8 w-full">
         <Navbar />
-        <Container className="bg-white rounded-lg shadow-sm flex flex-col mx-3 lg:m-auto md:m-2">
+        <Container className="bg-white rounded-lg shadow flex flex-col mx-3 lg:m-auto md:m-2">
           <TripBooking />
         </Container>
         <Container className="p-4 md:p-0 py-4 mx-4 lg:m-auto md:m-2">

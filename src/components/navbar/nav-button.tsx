@@ -16,7 +16,7 @@ const NavButton: FC<NavButtonProps> = ({ title, img }) => {
         height={25}
         className="w-6 h-6 md:w-8 md:h-8"
       />
-      <h2 className="ml-2 text-sm md:text-md lg:text-lg">{title}</h2>
+      <h2 className="ml-2 text-[15px] md:text-md lg:text-lg">{title}</h2>
     </div>
   );
 };

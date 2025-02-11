@@ -20,7 +20,7 @@ export default function InfiniteSwiper() {
       }}
       pagination={{ clickable: true }} // Enables pagination dots
       modules={[Autoplay, Pagination]} // Use necessary modules
-      className="w-full h-fit mt-8 rounded-md"
+      className="w-full h-fit mt-8 rounded-md shadow"
     >
       {images.map((src, index) => (
         <SwiperSlide key={index}>
