@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Statement - Inspired by Paytm UPI
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a small personal statement inspired by the Paytm UPI application. It leverages modern web technologies to provide a seamless user experience while ensuring security and scalability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Frontend & Backend**: [Next.js](https://nextjs.org/)
+- **Authentication**: [NextAuth](https://next-auth.js.org/)
+- **Database**: [PostgreSQL](https://www.postgresql.org/) (Managed using Prisma ORM)
+- **Package Manager**: [Bun](https://bun.sh/)
+- **Containerization**: [Docker](https://www.docker.com/) (For database in development mode)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- User authentication using NextAuth
+- Secure and efficient database management with Prisma & PostgreSQL
+- Full-stack Next.js implementation for better performance
+- Dockerize PostgreSQL for consistent development environments
 
-## Learn More
+## Installation & Setup
 
-To learn more about Next.js, take a look at the following resources:
+### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ensure you have the following installed:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Node.js](https://nodejs.org/) (Recommended for Next.js compatibility)
+- [Bun](https://bun.sh/)
+- [Docker](https://www.docker.com/)
+- PostgreSQL (If not using Docker)
 
-## Deploy on Vercel
+### Steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+
+2. **Install dependencies using Bun**
+
+   ```sh
+   bun install
+   ```
+
+3. **Set up environment variables.** Create a `.env` file and configure the following:
+
+   ```env
+   DATABASE_URL=postgresql://user:password@localhost:5432/your_db
+   NEXTAUTH_SECRET=your_secret_key
+   ```
+
+4. **Run PostgreSQL using Docker (Development Mode)**
+
+   ```sh
+   docker-compose up -d
+   ```
+
+5. **Run database migrations**
+
+   ```sh
+   bun prisma migrate dev
+   ```
+
+6. **Start the development server**
+
+   ```sh
+   bun dev
+   ```
+
+## Usage
+
+- Visit `http://localhost:3000` to access the application.
+- Register/Login to see account details.

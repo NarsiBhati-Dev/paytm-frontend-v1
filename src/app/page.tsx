@@ -19,7 +19,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-[#e8f8fd] pt-24 pb-8 w-full">
         <Navbar />
-        <Container className="bg-white rounded-lg shadow flex flex-col md:p-4 mx-3 sm:mx-auto">
+        <Container className="bg-white rounded-lg shadow flex flex-col md:p-4 md:mx-auto ml-3 mr-3">
           <TripBooking />
         </Container>
         <Container className="p-4 md:p-0">
